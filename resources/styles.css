@@ -1,0 +1,189 @@
+/* Color Theme: Olive branches in silver jug on white table. Mint green wall background. Home office decor, vintage Mediterranean summer style. */
+:root {
+    --color-accent1: #F2F2F2; /* Very light grey */
+    --color-accent2: #3C4021; /* Dark olive green */
+    --color-accent3: #D8D9D7; /* Light grey */
+    --color-accent4: #72735D; /* Olive green */
+    --color-accent5: #BFBFAA; /* Light beige olive green */
+    --color-white: #FFF; /* White */
+    --color-black: #000; /* Black */
+}
+/* Body */
+body {
+    opacity: 1; /* Start with full opacity */
+    transition: opacity 0.3s ease-in-out; /* Transition effect for opacity */
+    color: var(--color-accent4) !important;
+    background-color: rgba(191,191,170,0.1) !important;
+    font-family: Gupter, Georgia, serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.5rem;
+}
+
+/* Fade out effect when navigating away */
+body.is-loading {
+    opacity: 0;
+}
+
+.home-page h1 {
+    color: var(--color-accent2);
+    font-family: Corinthia, "Brush Script MT", cursive;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-accent2);
+}
+
+
+/* Links */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Mouse over links */
+a:hover,
+a:active,
+a:focus {
+    color: var(--color-accent2) !important; /* Accent color on hover, active, and focus */
+}
+
+/* Buttons */
+.btn {
+    color: var(--color-accent4); 
+    border-color: var(--color-accent4);
+}
+
+/* Mouse over buttons */
+.btn:hover, 
+.btn:active,
+.btn:focus {
+    background-color: var(--color-accent4); /* Button background color on hover, active, and focus */
+    color: var(--color-white) !important;
+    outline: none !important; /* Remove Bootstrap default outline */
+    box-shadow: none !important; /* Remove Bootstrap default box shadow */
+}
+
+/* Links and buttons using TAB key */
+a:focus-visible,
+.btn:focus-visible {    
+    outline: none !important; /* Remove Bootstrap default outline */
+    box-shadow: 0 0 0 0.125rem var(--color-accent4) !important; /* Apply focus shadow */
+    border-radius: 5px;
+}
+
+
+
+/* HEADER */
+header {
+    background-color: var(--color-white) !important; /* Header background color */
+}
+
+.navbar-brand, .nav-link {
+    color: var(--color-accent4) !important; /* Navbar brand and link color */
+}
+
+/* Remove border, outline, and box shadow from navbar toggler */
+.navbar-toggler {
+    border: none !important; /* Remove border */
+    outline: none !important; /* Remove outline */
+    box-shadow: none !important; /* Remove box shadow */
+}
+
+/* MAIN */
+
+
+.card {
+    border-radius: 0 !important; /* Ensure no rounded corners */
+    color: var(--color-accent4) !important;
+    background-color: rgba(191,191,170,0) !important;
+}
+
+.card-img-top {
+    border-radius: 0 !important; /* Ensure no rounded corners */
+    height: auto
+}
+
+/* Small screens (phones) */
+@media only screen and (max-width: 767.99px) {
+    .card-img-top {
+      max-width: 100%; /* Sets the maximum width to 100% of the viewport width */
+    }
+  }
+
+  /* Medium screens (tablets) */
+@media only screen and (min-width: 768px) and (max-width: 991.99px) {
+    .card-img-top {
+      max-width: 75%; /* Sets the maximum width to 100% of the viewport width */
+    }
+  }
+
+/* Large screens (laptops and desktops) */
+@media only screen and (min-width: 992px) {
+    .card-img-top {
+      max-width: 50%; /* Sets the maximum width to 50% of the viewport width */
+    }
+  }
+
+.about-page main a,
+.art-page .heading a,
+.photography-page .heading a,
+.contact-page main a {
+    color: var(--color-accent2);
+}
+
+
+/* Custom Line Style */
+.line {
+    border-top: 1px solid var(--color-accent2); 
+    width: 100%; /* Width of the line */
+    margin: 0 auto; /* Center the line horizontally */
+}
+
+/* Apply border styles to all relevant form elements */
+input,
+textarea,
+select,
+.form-control,
+input[type=checkbox],
+input[type=radio],
+.form-check-input {
+    border: 1px solid var(--color-accent3) !important; /* Custom border color */
+}
+
+/* Remove default blue outlines and apply custom styles to all relevant form elements */
+input:focus,
+input:hover,
+input:active,
+textarea:focus,
+textarea:hover,
+textarea:active,
+select:focus,
+select:hover,
+select:active,
+.form-control:focus,
+.form-control:hover,
+.form-control:active,
+input[type=checkbox]:focus,
+input[type=checkbox]:hover,
+input[type=checkbox]:active,
+input[type=radio]:focus,
+input[type=radio]:hover,
+input[type=radio]:active,
+.form-check-input:focus,
+.form-check-input:hover,
+.form-check-input:active {
+    outline: none !important; /* Remove default outline */
+    box-shadow: 0 0 5px var(--color-accent4) !important; /* Custom focus/hover shadow */
+}
+
+/* Custom styles for checked checkboxes and radio buttons */
+.form-check-input:checked {
+    background-color: var(--color-accent4) !important; /* Custom background color */
+}
+
+
+/* FOOTER */
+footer {
+    background-color: var(--color-white); /* Footer background color */
+}
