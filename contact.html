@@ -112,32 +112,40 @@
 
 
                     <!-- Contact Form -->
-                    <form class="row mt-5" action="submit_form.php" method="POST" netlify>
-                        <!-- First Name Field -->
-                        <div class="form-group col-6">
-                            <label for="FormControlFirstName">First Name</label>
-                            <input type="text" class="form-control" id="FormControlFirstName" name="first_name">
-                        </div>
-                        <!-- Last Name Field -->
-                        <div class="form-group col-6">
-                            <label for="FormControlLastName">Last Name</label>
-                            <input type="text" class="form-control" id="FormControlLastName" name="last_name">
-                        </div>
-                        <!-- Email Address Field -->
-                        <div class="form-group col-12">
-                            <label for="FormControlEmail">Email address</label>
-                            <input type="email" class="form-control" id="FormControlEmail" name="email">
-                        </div>
-                        <!-- Additional Message Textarea -->
-                        <div class="form-group col-12">
-                            <label for="FormControlMessage">Message</label>
-                            <textarea class="form-control" id="FormControlMessage" name="message" rows="3"></textarea>
-                        </div>
-                        <!-- Send Button -->
-                        <div class="form-group col-12 text-md-start text-center mt-5">
-                            <button type="submit" class="btn rounded-pill">Submit</button>
-                        </div>
-                    </form>
+<form name="contact" method="POST" data-netlify="true" class="row mt-5">
+    <!-- Hidden field to enable Netlify form handling -->
+    <input type="hidden" name="form-name" value="contact">
+    
+    <!-- First Name Field -->
+    <div class="form-group col-6">
+        <label for="FormControlFirstName">First Name</label>
+        <input type="text" class="form-control" id="FormControlFirstName" name="first_name">
+    </div>
+    
+    <!-- Last Name Field -->
+    <div class="form-group col-6">
+        <label for="FormControlLastName">Last Name</label>
+        <input type="text" class="form-control" id="FormControlLastName" name="last_name">
+    </div>
+    
+    <!-- Email Address Field -->
+    <div class="form-group col-12">
+        <label for="FormControlEmail">Email address</label>
+        <input type="email" class="form-control" id="FormControlEmail" name="email">
+    </div>
+    
+    <!-- Additional Message Textarea -->
+    <div class="form-group col-12">
+        <label for="FormControlMessage">Message</label>
+        <textarea class="form-control" id="FormControlMessage" name="message" rows="3"></textarea>
+    </div>
+    
+    <!-- Send Button -->
+    <div class="form-group col-12 text-md-start text-center mt-5">
+        <button type="submit" class="btn rounded-pill">Submit</button>
+    </div>
+</form>
+
                 </div>
             </div>
         </section>
