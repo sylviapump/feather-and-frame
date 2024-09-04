@@ -129,7 +129,6 @@ main a,
     color: var(--color-accent2);
 }
 
-
 /* Custom Line Style */
 .line {
     border-top: 1px solid var(--color-accent2); 
