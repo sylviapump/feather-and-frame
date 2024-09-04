@@ -73,7 +73,8 @@ header {
     background-color: var(--color-white) !important; /* Header background color */
 }
 
-.navbar-brand, .nav-link {
+header .navbar-brand, 
+header .nav-link {
     color: var(--color-accent4) !important; /* Navbar brand and link color */
     font-size: 1.25rem;
 }
