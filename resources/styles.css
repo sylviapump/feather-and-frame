@@ -25,15 +25,9 @@ body.is-loading {
     opacity: 0;
 }
 
-.home-page h1 {
-    color: var(--color-accent2);
-    font-family: Corinthia, "Brush Script MT", cursive;
-}
-
 h1, h2, h3, h4, h5, h6 {
     color: var(--color-accent2);
 }
-
 
 /* Links */
 a {
@@ -92,6 +86,10 @@ header {
 
 /* MAIN */
 
+.home-page h1 {
+    color: var(--color-accent2);
+    font-family: Corinthia, "Brush Script MT", cursive;
+}
 
 .card {
     border-radius: 0 !important; /* Ensure no rounded corners */
