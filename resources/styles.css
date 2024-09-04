@@ -75,6 +75,7 @@ header {
 
 .navbar-brand, .nav-link {
     color: var(--color-accent4) !important; /* Navbar brand and link color */
+    font-size: 1.25rem;
 }
 
 /* Remove border, outline, and box shadow from navbar toggler */
