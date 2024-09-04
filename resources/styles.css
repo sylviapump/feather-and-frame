@@ -182,11 +182,6 @@ input[type=radio]:active,
     background-color: var(--color-accent4) !important; /* Custom background color */
 }
 
-/* Hide the Honeypot Field from real users */
-.honeypot {
-    position: absolute;
-    left: -9999px;
-}
 
 /* FOOTER */
 footer {
