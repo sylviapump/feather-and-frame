@@ -125,10 +125,8 @@ header {
     }
   }
 
-.about-page main a,
-.art-page .heading a,
-.photography-page .heading a,
-.contact-page main a {
+main a,
+.heading a {
     color: var(--color-accent2);
 }
 
