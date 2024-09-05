@@ -67,15 +67,9 @@ a:focus-visible,
 }
 
 
-
 /* HEADER */
 header {
     background-color: var(--color-white) !important; /* Header background color */
-}
-
-header .navbar-brand, 
-header .nav-link {
-    color: var(--color-accent4) !important; /* Navbar brand and link color */
     font-size: 1.25rem;
 }
 
@@ -87,7 +81,6 @@ header .nav-link {
 }
 
 /* MAIN */
-
 .home-page h1 {
     color: var(--color-accent2);
     font-family: Corinthia, "Brush Script MT", cursive;
@@ -178,7 +171,6 @@ input[type=radio]:active,
 .form-check-input:checked {
     background-color: var(--color-accent4) !important; /* Custom background color */
 }
-
 
 /* FOOTER */
 footer {
