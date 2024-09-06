@@ -115,38 +115,47 @@
                     <!-- Contact Form -->
                     <form class="row mt-5" name="contact" method="POST" data-netlify="true"
                         data-netlify-honeypot="honeypot" action="thank-you.html">
+
                         <!-- Honeypot Field -->
                         <div style="display: none;">
-                            <label for="honeypot">Do not fill this out</label>
-                            <input type="text" id="honeypot" name="honeypot">
+                            <label for="honeypot" class="visually-hidden">Do not fill this out</label>
+                            <input type="text" id="honeypot" name="honeypot" aria-hidden="true">
                         </div>
+
                         <!-- First Name Field -->
                         <div class="form-group col-6">
                             <label for="FormControlFirstName">First Name</label>
                             <input type="text" class="form-control" id="FormControlFirstName" name="first_name"
-                                required>
+                                aria-required="true" required>
                         </div>
+
                         <!-- Last Name Field -->
                         <div class="form-group col-6">
                             <label for="FormControlLastName">Last Name</label>
-                            <input type="text" class="form-control" id="FormControlLastName" name="last_name" required>
+                            <input type="text" class="form-control" id="FormControlLastName" name="last_name"
+                                aria-required="true" required>
                         </div>
+
                         <!-- Email Address Field -->
                         <div class="form-group col-12">
-                            <label for="FormControlEmail">Email address</label>
-                            <input type="email" class="form-control" id="FormControlEmail" name="email" required>
+                            <label for="FormControlEmail">Email Address</label>
+                            <input type="email" class="form-control" id="FormControlEmail" name="email"
+                                aria-required="true" required>
                         </div>
+
                         <!-- Additional Message Textarea -->
                         <div class="form-group col-12">
                             <label for="FormControlMessage">Message</label>
                             <textarea class="form-control" id="FormControlMessage" name="message" rows="3"
-                                required></textarea>
+                                aria-required="true" required></textarea>
                         </div>
+
                         <!-- Send Button -->
                         <div class="form-group col-12 text-md-start text-center mt-5">
                             <button type="submit" class="btn rounded-pill">Submit</button>
                         </div>
                     </form>
+
 
 
                 </div>
