@@ -130,6 +130,12 @@ main a,
     margin: 0 auto; /* Center the line horizontally */
 }
 
+/* Contact Form */
+
+.required-star {
+    color: red;
+}
+
 /* Apply border styles to all relevant form elements */
 input,
 textarea,

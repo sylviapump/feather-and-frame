@@ -86,7 +86,6 @@
     <!-- Main Content -->
     <main>
 
-
         <!-- Contact Section -->
         <section class="container py-5 contact">
             <div class="row">
@@ -110,10 +109,13 @@
 
                     </p>
 
+                    <!-- General Required Field Note -->
+                    <p class="fs-6"><span class="required-star">*</span> Indicates a required field</p>
 
                     <!-- Contact Form -->
                     <form class="row mt-5" name="contact" method="POST" data-netlify="true"
                         data-netlify-honeypot="honeypot" action="thank-you.html">
+
 
                         <!-- Honeypot Field -->
                         <div style="display: none;">
@@ -123,28 +125,28 @@
 
                         <!-- First Name Field -->
                         <div class="form-group col-6">
-                            <label for="FormControlFirstName">First Name</label>
+                            <label for="FormControlFirstName">First Name <span class="required-star">*</span></label>
                             <input type="text" class="form-control" id="FormControlFirstName" name="first_name"
                                 aria-required="true" required>
                         </div>
 
                         <!-- Last Name Field -->
                         <div class="form-group col-6">
-                            <label for="FormControlLastName">Last Name</label>
+                            <label for="FormControlLastName">Last Name <span class="required-star">*</span></label>
                             <input type="text" class="form-control" id="FormControlLastName" name="last_name"
                                 aria-required="true" required>
                         </div>
 
                         <!-- Email Address Field -->
                         <div class="form-group col-12">
-                            <label for="FormControlEmail">Email Address</label>
+                            <label for="FormControlEmail">Email Address <span class="required-star">*</span></label>
                             <input type="email" class="form-control" id="FormControlEmail" name="email"
                                 aria-required="true" required>
                         </div>
 
                         <!-- Additional Message Textarea -->
                         <div class="form-group col-12">
-                            <label for="FormControlMessage">Message</label>
+                            <label for="FormControlMessage">Message <span class="required-star">*</span></label>
                             <textarea class="form-control" id="FormControlMessage" name="message" rows="3"
                                 aria-required="true" required></textarea>
                         </div>
@@ -154,9 +156,6 @@
                             <button type="submit" class="btn rounded-pill">Submit</button>
                         </div>
                     </form>
-
-
-
                 </div>
             </div>
         </section>
