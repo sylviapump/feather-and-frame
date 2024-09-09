@@ -110,8 +110,8 @@
                         <img src="resources/images/DSCN5035.JPG" class="card-img-top img-fluid mx-auto d-block"
                             alt="Drawing of a Green Rosella perched on a branch.">
                         <div class="card-body text-center">
-                            <a class="text-center mt-5" data-bs-toggle="collapse" href="#collapseGreenRosella" role="button"
-                                aria-expanded="false" aria-controls="collapseGreenRosella">
+                            <a class="text-center mt-5" data-bs-toggle="collapse" href="#collapseGreenRosella"
+                                role="button" aria-expanded="false" aria-controls="collapseGreenRosella">
                                 <h2 class="more-info">Green Rosella</h2>
                             </a>
                             <p class="fst-italic">Platycercus elegans</p>
@@ -153,13 +153,15 @@
                         <img src="resources/images/DSCN5164.JPG" class="card-img-top img-fluid mx-auto d-block"
                             alt="Drawing of a Yellow-Throated Honeyeater posing on top of a branch.">
                         <div class="card-body text-center">
-                            <a class="text-center mt-5" data-bs-toggle="collapse" href="#collapseYellowThroatedHoneyeater" role="button"
-                                aria-expanded="false" aria-controls="collapseYellowThroatedHoneyeater">
+                            <a class="text-center mt-5" data-bs-toggle="collapse"
+                                href="#collapseYellowThroatedHoneyeater" role="button" aria-expanded="false"
+                                aria-controls="collapseYellowThroatedHoneyeater">
                                 <h2 class="more-info">Yellow-Throated Honeyeater</h2>
                             </a>
                             <p class="fst-italic">Nesoptilotis flavicollis</p>
                             <br>
-                            <div class="collapse col-lg-6 text-center mx-auto px-5" id="collapseYellowThroatedHoneyeater">
+                            <div class="collapse col-lg-6 text-center mx-auto px-5"
+                                id="collapseYellowThroatedHoneyeater">
                                 <p>
                                     The Yellow-throated Honeyeater, a distinctive bird found across eastern and
                                     southeastern
@@ -202,8 +204,8 @@
                         <img src="resources/images/DSCN5927.JPG" class="card-img-top img-fluid mx-auto d-block"
                             alt="Drawing of a Tasmanian thornbill peaking from behind a branch with clumps of moss.">
                         <div class="card-body text-center">
-                            <a class="text-center mt-5" data-bs-toggle="collapse" href="#TasmanianThornbill" role="button"
-                                aria-expanded="false" aria-controls="collapseTasmanianThornbill">
+                            <a class="text-center mt-5" data-bs-toggle="collapse" href="#TasmanianThornbill"
+                                role="button" aria-expanded="false" aria-controls="collapseTasmanianThornbill">
                                 <h2 class="more-info">Tasmanian thornbill</h2>
                             </a>
                             <p class="fst-italic">Acanthiza ewingii</p>
@@ -280,37 +282,7 @@
         crossorigin="anonymous"></script>
 
     <!-- Custom JavaScript -->
-    <script>
-        // Function to close navbar when link is clicked
-        function closeNavbar() {
-            var navToggler = document.querySelector('.navbar-toggler');
-            var navCollapse = document.querySelector('.navbar-collapse');
-            var icon = navToggler.querySelector('span');
-
-            if (navCollapse.classList.contains('show')) {
-                navCollapse.classList.remove('show');
-                // Change the toggle icon back to the default state
-                if (icon.classList.contains('fa-times')) {
-                    icon.classList.remove('fa-times');
-                    icon.classList.add('navbar-toggler-icon');
-                }
-            }
-        }
-
-        // Toggle navbar icon between default and 'X' icon
-        var navbarToggler = document.querySelector('.navbar-toggler');
-
-        navbarToggler.addEventListener('click', function () {
-            var icon = navbarToggler.querySelector('span');
-            if (icon.classList.contains('navbar-toggler-icon')) {
-                icon.classList.remove('navbar-toggler-icon');
-                icon.classList.add('fa', 'fa-times');
-            } else {
-                icon.classList.remove('fa', 'fa-times');
-                icon.classList.add('navbar-toggler-icon');
-            }
-        });
-    </script>
+    <script src="resources/script.js"></script>
 
 </body>
 
