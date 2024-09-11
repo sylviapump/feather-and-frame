@@ -130,6 +130,10 @@ main a,
     margin: 0 auto; /* Center the line horizontally */
 }
 
+.hidden-div {
+    visibility: hidden;
+}
+
 /* Contact Form */
 .required-star {
     color: red;
